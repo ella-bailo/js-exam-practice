@@ -21,7 +21,7 @@
 * cannot have value reassigned
 * is **not** available globally in window object when defined at the top level 
 
-The below example is a stack overflow answer by [Michal Perlakowski](https://stackoverflow.com/users/3853934/micha%c5%82-per%c5%82akowski) edited by [ketchupisred](https://stackoverflow.com/users/5578477/ketchupisred) the full thread can be found [here](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var#:~:text=The%20main%20difference%20is%20the,outside%20the%20loop%20for%20example.&text=let%20allows%20you%20to%20declare,on%20which%20it%20is%20used.). 
+The below example is a stack overflow answer by [Michal Perlakowski](https://stackoverflow.com/users/3853934/micha%c5%82-per%c5%82akowski), edited by [ketchupisred](https://stackoverflow.com/users/5578477/ketchupisred). The full thread can be found [here](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var#:~:text=The%20main%20difference%20is%20the,outside%20the%20loop%20for%20example.&text=let%20allows%20you%20to%20declare,on%20which%20it%20is%20used.). 
 
 
 **Block scope**
