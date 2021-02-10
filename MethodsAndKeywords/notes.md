@@ -200,6 +200,24 @@ console.log(b);      // 0
 ```
 ## Addition/subtraction
 
+The below masterpeice is by me 
+
+Operators: + and - 
+
+example: 
+
+```
+let one = 1;
+let two = 2;
+
+console.log(one + two); // 3
+console.log(one - two) // -1
+
+```
+
+
+
+```
 ## Division/Multiplication
 
 ## Modulus
