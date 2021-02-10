@@ -160,3 +160,48 @@ https://medium.com/swlh/local-vs-global-scope-and-let-vs-var-in-javascript-6d577
 https://josephcardillo.medium.com/the-difference-between-var-let-and-const-in-javascript-part-2-60fa568d0a0
 
 
+## Increment/decrement
+
+The below section is directly taken from a [codeburst article](https://codeburst.io/javascript-increment-and-decrement-8c223858d5ed)
+
+### Using ++/-- After the Operand
+
+When you use the increment/decrement operator after the operand, the value will be returned before the operand is increased/decreased.
+
+example:
+
+```
+
+// Increment
+let a = 1;
+console.log(a++);    // 1
+console.log(a);      // 2
+// Decrement
+let b = 1;
+console.log(b--);    // 1
+console.log(b);      // 0
+
+```
+
+### Using ++/-- Before the Operand
+
+If you’d rather make the variable increment/decrement before returning, you simply have to use the increment/decrement operator before the operand:
+
+```
+// Increment
+let a = 1;
+console.log(++a);    // 2
+console.log(a);      // 2
+// Decrement
+let b = 1;
+console.log(--b);    // 0
+console.log(b);      // 0
+
+```
+## Addition/subtraction
+
+## Division/Multiplication
+
+## Modulus
+
+## Compound assignment operators 
