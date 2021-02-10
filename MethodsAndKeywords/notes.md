@@ -21,17 +21,20 @@
 * cannot have value reassigned
 * is **not** available globally in window object when defined at the top level 
 
+
 ### Examples 
 
 #### var vs let
 
 The below example is a stack overflow answer by [Michal Perlakowski](https://stackoverflow.com/users/3853934/micha%c5%82-per%c5%82akowski) edited by [ketchupisred](https://stackoverflow.com/users/5578477/ketchupisred) the full thread can be found [here](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var#:~:text=The%20main%20difference%20is%20the,outside%20the%20loop%20for%20example.&text=let%20allows%20you%20to%20declare,on%20which%20it%20is%20used.). 
 
+
 **Block scope**
 
 Variables declared using the let keyword are block-scoped, which means that they are available only in the block in which they were declared.
 
 **At the top level (outside of a function)**
+
 
 At the top level, variables declared using let don't create properties on the global object.
 
@@ -46,6 +49,7 @@ console.log(this.globalVariable); // 42
 console.log(this.blockScopedVariable); // undefined
 
 ```
+
 
 **Inside a function**
 
@@ -65,6 +69,7 @@ console.log(blockScopedVariable); // ReferenceError: blockScopedVariable is not 
 
 ```
 
+
 **Inside a block**
 
 Variables declared using let inside a block can't be accessed outside that block.
@@ -82,6 +87,7 @@ console.log(globalVariable); // 42
 console.log(blockScopedVariable); // ReferenceError: blockScopedVariable is not defined
 
 ```
+
 
 **Inside a loop**
 
@@ -104,6 +110,7 @@ console.log(typeof l); // undefined
 
 ```
 
+
 **Loops with closures**
 
 If you use let instead of var in a loop, with each iteration you get a new variable. That means that you can safely use a closure inside a loop.
@@ -122,6 +129,7 @@ for (let j = 0; j < 3; j++) {
 
 ```
 
+
 **Temporal dead zone**
 
 Because of the temporal dead zone, variables declared using let can't be accessed before they are declared. Attempting to do so throws an error.
@@ -133,6 +141,7 @@ console.log(hasTDZ); // ReferenceError: hasTDZ is not defined
 let hasTDZ = 42;
 
 ```
+
 
 **No re-declaring**
 
