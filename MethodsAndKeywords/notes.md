@@ -215,9 +215,6 @@ console.log(one - two) // -1
 
 ```
 
-
-
-```
 ## Division/Multiplication
 
 ## Modulus
