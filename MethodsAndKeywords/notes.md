@@ -5,13 +5,13 @@
 ### var
 
 * function scoped
-* hoisted, undefined before declaration
+* hoisted and initilized, undefined before declaration
 * **is** available globally in window object when defined at the top level
 
 ### let 
 
 * block scoped
-* refferance error before declaration
+* hoisted but **not** initilized, refferance error before declaration
 * is **not** available globally in window object when defined at the top level 
 
 ### const
@@ -20,11 +20,6 @@
 * refferance error before declaration
 * cannot have value reassigned
 * is **not** available globally in window object when defined at the top level 
-
-
-### Examples 
-
-#### var vs let
 
 The below example is a stack overflow answer by [Michal Perlakowski](https://stackoverflow.com/users/3853934/micha%c5%82-per%c5%82akowski) edited by [ketchupisred](https://stackoverflow.com/users/5578477/ketchupisred) the full thread can be found [here](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var#:~:text=The%20main%20difference%20is%20the,outside%20the%20loop%20for%20example.&text=let%20allows%20you%20to%20declare,on%20which%20it%20is%20used.). 
 
@@ -158,9 +153,10 @@ var c;
 let c; // SyntaxError: Identifier 'c' has already been declared
 ```
 
-#### var vs const
+### Good Reading
 
-#### let vs const
-
+https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
+https://medium.com/swlh/local-vs-global-scope-and-let-vs-var-in-javascript-6d577d0a2750
+https://josephcardillo.medium.com/the-difference-between-var-let-and-const-in-javascript-part-2-60fa568d0a0
 
 
