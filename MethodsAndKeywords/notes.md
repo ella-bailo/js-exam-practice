@@ -210,8 +210,8 @@ example:
 let one = 1;
 let two = 2;
 
-console.log(one + two); // 3
-console.log(one - two) // -1
+console.log(one + two);      // 3
+console.log(one - two);      // -1
 
 ```
 
