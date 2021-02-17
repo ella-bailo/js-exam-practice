@@ -458,7 +458,7 @@ try {
   // Code to run
 }
 
-catch {
+catch(err) {
   // Code to run if an exception occurs
 }
 
