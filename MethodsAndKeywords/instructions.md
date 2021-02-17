@@ -12,7 +12,7 @@ write code that:
 * Shows compound assignment operator for at least four operations
 
 
-## Excercise two
+## Exercise two
 
 Create an html webpage with some JavaScript which:
 
@@ -24,3 +24,7 @@ Create an html webpage with some JavaScript which:
 * Log some information to the console
 * Make sure all the code you’ve written conforms to standard JavaScript conventions
 
+## Exercise three
+
+* Create an html webpage with a button that updates some text on the page.  Put your code inline on the page.
+* Extract your code into a .js file and refer to it from the html page.

@@ -371,3 +371,27 @@ debugger;
 a = 2; 
 
 ```
+## Inline and external scripts
+
+Inline example: 
+
+```
+<!DOCTYPE html>  
+<html>    
+<body>  
+<script> // code here </script> 
+</body>  
+</html>  
+
+```
+external script example: 
+
+```
+<!DOCTYPE html>  
+<html>    
+<body>  
+<src = "/path"> 
+</body>  
+</html> 
+
+```
