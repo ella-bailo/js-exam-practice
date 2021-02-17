@@ -338,3 +338,36 @@ Given that x = 10 and y = 5, the table below explains the assignment operators:
 | *=                | x *= y      | x = x * y     | x = 50
 | /=                | x /= y      | x = x / y     | x = 2
 | %=                | x %= y      | x = x % y     | x = 0
+
+
+## No script 
+Defines alternate content to be displayed to users who have JS disabled in there browser 
+
+for example: 
+
+```
+<script>console.log("Hello world!")<\script>
+
+<noscript>You need to have JS enabled to access all features of this site<\noscript>
+
+```
+## Reserved words 
+
+Reserved words are words that cannot be used as variable, function or label names in JavaScript. 
+
+A list of these can be found [here](https://www.w3schools.com/js/js_reserved.asp).
+
+## Debugger statement 
+
+The Debugger statment acts as a breakpoint in code, launching a debugger if one is available. If no debugger is available the debugger statment does nothing.
+
+for example: 
+
+```
+let a = 1;
+
+debugger;
+
+a = 2; 
+
+```
