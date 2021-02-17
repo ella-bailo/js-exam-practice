@@ -319,3 +319,16 @@ console.log(negativeModulo(-5.5, 3)); // 1.5
 ```
 
 ## Compound assignment operators 
+
+The below table is taken from [W3schools.com](https://www.w3schools.com/jsref/jsref_operators.asp)
+
+Given that x = 10 and y = 5, the table below explains the assignment operators:
+
+| Operator          | Example     | Same as       | Result in x
+| :---              | :---        | :---          | :--- 
+| =                 | x = y       | x = y         | x = 5
+| +=                | x += y      | x = x + y     | x = 15
+| -=                | x -= y      | x = x - y     | x = 5
+| *=                | x *= y      | x = x * y     | x = 50
+| /=                | x /= y      | x = x / y     | x = 2
+| %=                | x %= y      | x = x % y     | x = 0
