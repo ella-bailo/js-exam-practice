@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>I am a practice exercise</h1>
+    <p id="demo"></p>
+    <button onclick="myFunction()">click me!</button>
+    <p id="clickCount"></p>
+    <script>
+      let myLet = "hello ";
+      const MY_CONST = "world";
+      let clickCount = 0;
+      document.getElementById("demo").innerHTML = myLet + MY_CONST;
+
+      function myFunction() {
+        ++clickCount;
+        document.getElementById("clickCount").innerHTML = clickCount;
+        if (myLet === "hello ") {
+          myLet = "goodbye ";
+        } else {
+          myLet = "hello ";
+        }
+        document.getElementById("demo").innerHTML = myLet + MY_CONST;
+        console.log(`click count: ${clickCount}`);
+        debugger;
+
+        while (clickCount > 20) {
+          if (clickCount % 2 === 0) {
+            document.getElementById("demo").style.color = "green";
+          } else {
+            document.getElementById("demo").style.color = "black";
+          }
+          break;
+        }
+
+        //TODO: alert when a user has made 100 clicks
+      }
+    </script>
+    <noscript> Please enable JS to view all features of this page </noscript>
+  </body>
+</html>
