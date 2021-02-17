@@ -373,6 +373,24 @@ a = 2;
 ```
 ## Inline and external scripts
 
+When to use, how to use and what happens when both are used.
+
+### Inline vs external
+
+**Inline**
+
+* Reduces number of HTTP requests as the script is loaded with the page.
+
+* Executed immediately.
+
+**External**
+
+* The external file is cached by the browser, reducing download time.
+
+* Script can be called in multiple places instead of being written out each time (DRY)
+
+* async and defer attributes can be used 
+
 Inline example: 
 
 ```
@@ -393,5 +411,59 @@ external script example:
 <src = "/path"> 
 </body>  
 </html> 
+
+```
+If both inline and external scripts are used the inline script will not be executed. 
+
+For example: 
+
+```
+<script src ="./script.js">
+    function myInlineFunction(){
+        document.getElementById("demo_two").innerHTML = "Inline Script won!" // Inline script did not win :(  the external script is executed and the inline script is not
+    }
+    myInlineFunction();
+</script>
+
+```
+## Exception handling 
+
+Bullet points in the below section have been lifted from [this article](https://www.tutorialspoint.com/javascript/javascript_error_handling.htm).
+
+There are three types of Errors in Programming, Syntax Errors, Runtime Errors, and Logical Errors. 
+
+* **Syntax Errors:** Occur when JS is interpreted, the rest of the code will still execute if it is not dependant on the affected thread.
+
+* **Runtime Errors:** Also called **Exceptions** occur during execution (after interpretation) e.g trying to call a function that does not exist.
+
+* **Logical Errors:** Errors that occur due to incorrect logic e.g getting an unexpected result. 
+
+The throw opperator can be used to create exceptions. 
+
+for example: 
+
+```
+
+if(string.length < 10){
+  throw "Not enough letters in string"
+}
+
+```
+In JavaScript **exceptions** can be handled using try, catch and finally. 
+
+For example: 
+
+```
+try {
+  // Code to run
+}
+
+catch {
+  // Code to run if an exception occurs
+}
+
+finally {
+  // Code that is executed wether an exception occurs or not
+}
 
 ```

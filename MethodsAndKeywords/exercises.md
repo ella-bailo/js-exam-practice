@@ -28,3 +28,10 @@ Create an html webpage with some JavaScript which:
 
 * Create an html webpage with a button that updates some text on the page.  Put your code inline on the page.
 * Extract your code into a .js file and refer to it from the html page.
+
+## Exercise four 
+
+* Create a function which converts a string to an integer.  If the parseInt() returns NaN you should thrown an exception.
+* Create an html webpage to use your function:
+    * Put in an <input> box and a <button>
+    * When the button is clicked, call your function with the user’s input, making sure you handle the potential exception.
