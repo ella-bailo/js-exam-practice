@@ -35,3 +35,10 @@ Create an html webpage with some JavaScript which:
 * Create an html webpage to use your function:
     * Put in an input box and a button
     * When the button is clicked, call your function with the user’s input, making sure you handle the potential exception.
+
+## Exercise five 
+
+* Create a web-page as follows:
+    * There should be a small red box in the middle of the page with two buttons labelled ‘left’ and ‘right’.
+    * When the user clicks left/right, the box moves left or right.
+    * If the box moves off the visible window, a dialog appears saying, “Gone!” and the box resets to the middle of the screen.
