@@ -14,8 +14,8 @@
 ## Exercise two
 
 * Create another web page (unrelated to the first) which has a button.  When clicked the page should:
-    i. Display a list of the names of all the document’s child nodes.  This does not have to display names of the child nodes’ child nodes, just the root elements.
-    ii. (Advanced) Traverse the DOM tree and display all child nodes’ child nodes.  Output every element on the page.  This can be done using a recursive function.  The desired output is that your page will show an html representation of your page.
+    1. Display a list of the names of all the document’s child nodes.  This does not have to display names of the child nodes’ child nodes, just the root elements.
+    2. (Advanced) Traverse the DOM tree and display all child nodes’ child nodes.  Output every element on the page.  This can be done using a recursive function.  The desired output is that your page will show an html representation of your page.
 
 ## Exercise three
 

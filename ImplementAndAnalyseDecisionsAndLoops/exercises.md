@@ -20,9 +20,9 @@
 * Repeatedly ask the user to guess a number, then tell them whether the random number is higher, lower or equal to their guess until they guess correctly.
 
 * Create a menu with the options:
-    i. Play 1-100 game
-    ii. Print Welcome Message
-    iii. Quit
+    1. Play 1-100 game
+    2. Print Welcome Message
+    3. Quit
 
 * Use a switch/case statement to run an appropriate function based on user input
 
