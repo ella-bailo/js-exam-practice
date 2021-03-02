@@ -467,3 +467,60 @@ finally {
 }
 
 ```
+## Code that interacts with the BOM 
+
+### Display logs 
+
+window.alert()
+
+for example: 
+
+```
+window.alert("Hello World")
+
+```
+
+### Determine screen size 
+
+**innerWidth**
+
+innerWidth gives the width of the window, this can change by reducing/increasing the window size. 
+
+This does not include things like chrome tools and applies to the view port. 
+
+The width that a horizontal scroll bar would cover is the same as innerWidth. 
+
+For example:
+
+```
+let innerWidth = window.innerWidth
+
+// Made window smaller 
+
+console.log(innerWidth) // 900px
+
+// Made window bigger 
+
+console.log(innerWidth) // 1200px
+
+```
+
+**screen.width**
+
+screen.width gives the width of the whole screen, this does not change. 
+
+for example: 
+
+```
+let screenWidth = screen.width 
+
+// Made window smaller 
+
+console.log(screenWidth) // 1500 px
+
+// Made window bigger 
+
+console.log(screenWidth) // 1500 px
+
+```
+
