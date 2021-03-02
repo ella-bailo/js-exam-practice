@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Guess a number between 1 - 100</p>
+    <input id="input" />
+    <button onclick="myFunction()">Sumbit Guess</button>
+    <p id="output"></p>
+    <script>
+      let randomNumber = Math.ceil(Math.random() * 100);
+
+      function myFunction() {
+        let input = document.getElementById("input").value;
+        let parsedInput = parseFloat(input);
+
+        if (randomNumber < parsedInput) {
+          document.getElementById("output").innerHTML = "Lower";
+        } else if (randomNumber > parsedInput) {
+          document.getElementById("output").innerHTML = "Higher";
+        } else if (randomNumber === parsedInput) {
+          document.getElementById("output").innerHTML = "You guessed it!";
+        } else {
+          document.getElementById("output").innerHTML = "Please enter a number";
+        }
+      }
+    </script>
+  </body>
+</html>
