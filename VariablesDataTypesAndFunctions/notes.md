@@ -298,15 +298,148 @@ console.log(string.indexOf("World")) //6
 
 **push()**
 
+The push() method adds new items to the end of an array, and returns the new length.
+
+Note: The new item(s) will be added at the end of the array.
+
+Note: This method changes the length of the array.
+
+Tip: To add items at the beginning of an array, use the unshift() method.
+
+syntax: 
+
+```
+array.push(item1, item2, ..., itemX)
+
+```
+For example: 
+
+```
+let array = [1, 2, 3, 4, 5];
+
+array.push(6);
+
+console.log(array) //[1, 2, 3, 4, 5, 6];
+
+```
+
 **pop()**
+
+The pop() method removes the last element of an array, and returns that element.
+
+Note: This method changes the length of an array.
+
+Tip: To remove the first element of an array, use the shift() method.
+
+syntax: 
+
+```
+array.pop()
+
+```
+For example: 
+
+```
+let array = [1, 2, 3, 4, 5];
+
+array.pop();
+
+console.log(array) //[1, 2, 3, 4];
+
+```
+
 
 **shift()**
 
+The shift() method removes the first item of an array.
+
+Note: This method changes the length of the array.
+
+Note: The return value of the shift method is the removed item.
+
+Tip: To remove the last item of an array, use the pop() method.
+
+Note: this method will change the original array.
+
+syntax: 
+
+```
+array.shift()
+
+```
+For example: 
+
+```
+let array = [1, 2, 3, 4, 5];
+
+array.shift();
+
+console.log(array) //[2, 3, 4, 5];
+
+```
+
 **unshift()**
 
-### Length
+The unshift() method adds new items to the beginning of an array, and returns the new length.
+
+Note: This method changes the length of an array.
+
+Tip: To add new items at the end of an array, use the push() method.
+
+syntax: 
+
+```
+array.unshift()
+
+```
+For example: 
+
+```
+let array = [1, 2, 3, 4, 5];
+
+array.unshift(-1, 0);
+
+console.log(array) //[-1, 0, 1, 2, 3, 4, 5];
+
+```
+### length
+
+The length property sets or returns the number of elements in an array.
+
+Syntax:
+
+Return the length of an array:
+
+```
+array.length
+
+```
+
+Set the length of an array:
+
+```
+array.length = number
+```
+
+For example: 
+
+```
+let array = [1, 2, 3, 4, 5];
+
+console.log(array.length) // 5
+
+array.length = 7;
+
+console.log(array); // [1, 2, 3, 4, 5, '', ''];
+```
 
 ### Access and element
 
+For example: 
+
+```
+let x = y[3];
+
+```
 
 
