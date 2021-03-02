@@ -7,7 +7,7 @@ randomNumbers.push(Math.random())
 randomNumbers.forEach(
     number => {
         console.log('\n')
-        console.log(`number: ${number}`)
+        console.log(` number: ${number}`)
         console.log(` number rounded off: ${Math.round(number)}`)
         console.log(` number rounded up: ${Math.ceil(number)}`)
         console.log(` number rounded down: ${Math.floor(number)}`)
