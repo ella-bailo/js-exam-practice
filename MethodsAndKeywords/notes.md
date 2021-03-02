@@ -493,7 +493,7 @@ The width that a horizontal scroll bar would cover is the same as innerWidth.
 For example:
 
 ```
-let innerWidth = window.innerWidth
+let innerWidth = window.innerWidth // 1000px
 
 // Made window smaller 
 
@@ -512,15 +512,15 @@ screen.width gives the width of the whole screen, this does not change.
 for example: 
 
 ```
-let screenWidth = screen.width 
+let screenWidth = screen.width // 1500px 
 
 // Made window smaller 
 
-console.log(screenWidth) // 1500 px
+console.log(screenWidth) // 1500px
 
 // Made window bigger 
 
-console.log(screenWidth) // 1500 px
+console.log(screenWidth) // 1500px
 
 ```
 
