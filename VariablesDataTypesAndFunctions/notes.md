@@ -481,6 +481,7 @@ new Date() // creates date object with current date and time
 new Date(year, month, day, hours, minutes, seconds, milliseconds)
 new Date(milliseconds)
 new Date(date string)
+
 ```
 
 Example: 
