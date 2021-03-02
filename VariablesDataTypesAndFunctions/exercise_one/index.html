@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input id="input" />
+    <button id="button" onclick="myFunction()">Click Me!</button>
+    <p id="output"></p>
+    <script>
+      "use strict";
+
+      function myFunction() {
+        let userInput = document.getElementById("input").value;
+        let value;
+
+        if (isNaN(userInput)) {
+          value = `string: ${userInput.slice(0, 4)}`;
+        } else if (userInput === "") {
+          value = "null";
+        } else if (isNaN(userInput) === false) {
+          value = `number: ${parseFloat(userInput).toFixed(3)}`;
+        } else {
+          value = "not null, not a string, and not a number";
+        }
+        document.getElementById("output").innerHTML = value;
+      }
+    </script>
+  </body>
+</html>
