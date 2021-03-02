@@ -514,3 +514,124 @@ MM/DD vs DD/MM
 
 via conversion to milliseconds
 
+## Math Functions 
+
+### random()
+
+Math.random() returns a random number between 0(inclusive), and 1(exclusive):
+
+For example:
+
+```
+console.log(Math.random()) // returns int 0 - 0.999999
+console.log(Math.floor(Math.random() * 10)) // returns int 0 - 9
+
+```
+### round()
+
+Math.round() method rounds a number to the nearest integer.
+
+For example: 
+
+```
+console.log(Math.round(3.5)) // 4
+
+```
+### abs()
+
+The abs() method returns the absolute (positive) value of a number.
+
+For example: 
+
+```
+console.log(Math.abs(-67)) //67
+
+```
+
+### floor() and ceiling()
+
+**Math.floor()**
+
+The floor() method rounds a number DOWNWARDS to the nearest integer, and returns the result.
+
+If the passed argument is an integer, the value will not be rounded.
+
+For example: 
+
+```
+console.log(Math.floor(1.7)) // 1
+```
+
+**Math.ceiling()**
+
+The ceil() method rounds a number UPWARDS to the nearest integer, and returns the result.
+
+If the passed argument is an integer, the value will not be rounded.
+
+For example: 
+
+```
+console.log(Math.ceil(1.1)) // 2
+```
+
+### min() and max()
+
+**Math.min()**
+
+The min() method returns the number with the lowest value.
+
+Syntax: 
+
+```
+Math.min(n1, n2, n3, ..., nX)
+
+```
+
+For example:
+
+```
+console.log(Math.min(2, 6)) //2
+```
+**Math.max()**
+
+The max() method returns the number with the highest value.
+
+Syntax: 
+
+```
+Math.max(n1, n2, n3, ..., nX)
+
+```
+
+For example:
+
+```
+console.log(Math.max(2, 6)) //6
+```
+
+### pow()
+
+The pow() method returns the value of x to the power of y (xy).
+
+Syntax: 
+
+```
+Math.pow(x, y)
+
+```
+
+For example:
+
+```
+console.log(Math.max(6, 0)) // 1
+```
+
+### sqrt()
+
+The sqrt() method returns the positive square root of a number.
+
+For example:
+
+```
+console.log(Math.sqrt(16)) // 4
+```
