@@ -441,5 +441,74 @@ For example:
 let x = y[3];
 
 ```
+## Using Objects
 
+### Properties
+
+Example: 
+
+```
+var bob = { name: 'Bob' };
+
+```
+
+### Methods
+
+Example: 
+
+```
+bob = { getName: function() {} };
+
+```
+
+### Instantiation
+
+Example: 
+
+```
+var dog = Animal();
+
+```
+
+### Date object
+
+Date objects are created with the new Date() constructor.
+
+There are 4 ways to create a new date object:
+
+```
+new Date() // creates date object with current date and time 
+new Date(year, month, day, hours, minutes, seconds, milliseconds)
+new Date(milliseconds)
+new Date(date string)
+
+Example: 
+
+```
+var d = new Date()
+
+```
+
+### Retrive parts
+
+**getMonth()**
+
+For example: 
+
+```
+var date = new Date();
+
+var month = date.getMonth();
+
+console.log(month) // 0 = Jan, 1 = Feb, etc.
+
+```
+
+### Localise date
+
+MM/DD vs DD/MM
+
+### Add/ subtract dates 
+
+via conversion to milliseconds
 
