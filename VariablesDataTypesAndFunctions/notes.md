@@ -229,5 +229,84 @@ let string = "I am a string"
 console.log(string.replace("am a", "like")) // "I like string"
 
 ```
+## Arrays 
+
+### Single-dimention arrays 
+
+For example:
+
+```
+let x = [1,2,3]
+
+```
+
+### Multi-dimention arrays 
+
+For example: 
+
+```
+let x =[[1,2], [3], [4,5,6]]
+
+```
+
+### Iteration 
+
+Syntax:
+
+```
+array.forEach(myFunction())
+
+```
+
+### Sort and Search 
+
+**sort()**
+
+sorts items in an array alphbetically / or from low to high numerically.
+
+For example: 
+
+```
+let array = [c, b, a, e, g];
+
+console.log(array.sort()) // [a, c, b, e, g]
+
+```
+**indexOf()**
+
+The indexOf() method returns the position of the first occurrence of a specified value in a string.
+
+This method returns -1 if the value to search for never occurs.
+
+Note: The indexOf() method is case sensitive.
+
+syntax: 
+
+```
+string.indexOf(searchvalue, start)
+
+```
+For example: 
+
+```
+let string = "Hello World!"
+
+console.log(string.indexOf("World")) //6
+
+```
+### Updating
+
+**push()**
+
+**pop()**
+
+**shift()**
+
+**unshift()**
+
+### Length
+
+### Access and element
+
 
 
