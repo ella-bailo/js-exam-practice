@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <p id="p">Hello!</p>
+      <div onclick="mySecondFunction()">Click me</div>
+    <script>
+        // whole page
+        function myFunction(){
+            document.write("Goodbye!")
+        }
+        // just hello
+        function mySecondFunction(){
+            document.getElementById("p").innerHTML = "Goodbye!"
+        }
+    </script>
+  </body>
+</html>
