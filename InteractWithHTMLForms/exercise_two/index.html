@@ -1,0 +1,23 @@
+<!-- ## Exercise two
+
+* Create another web page (unrelated to the first) which has a button.  When clicked the page should:
+    1. Display a list of the names of all the document’s child nodes.  This does not have to display names of the child nodes’ child nodes, just the root elements.
+    2. (Advanced) Traverse the DOM tree and display all child nodes’ child nodes.  Output every element on the page.  This can be done using a recursive function.  The desired output is that your page will show an html representation of your page. -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="mySecondFunction()">Click me!</button>
+    <script>
+      //pt 1
+      function myFunction() {
+        let childNodesArray = document.childNodes;
+        for (node in childNodesArray) {
+          let p = document.createElement("P");
+          p.innerHTML = document.childNodes[node];
+          document.body.appendChild(p);
+        }
+      }
+    </script>
+  </body>
+</html>
