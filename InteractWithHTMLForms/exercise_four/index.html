@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <form action="/random-url" method="post">
+        <label>Enter username</label>
+        <input id="username" name="username">
+        <label>Enter password</label>
+        <input id="password" name="username">
+        <input type="submit" value="Log in" onclick="myFunction()">
+        </form>
+
+        <script>
+            function myFunction(){
+                if (document.getElementById("password").value != "password"){
+                    window.open(URL) //scary.html
+                }
+            }
+        </script>
+    </body>
+</html>
