@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <label>Please enter a string</label>
+        <input id="firststring">
+        <label>Please enter another string</label>
+        <input id="secondstring">
+        <button onclick="myFunction()">Compare strings</button>
+        <p id= "p"></p>
+        <script>
+            function myFunction(){
+                let firstString = document.getElementById("firststring").value;
+                let secondString = document.getElementById("secondstring").value;
+
+                if(firstString.localeCompare(secondString) === -1){
+                    document.getElementById("p").innerHTML = `${firstString} is sorted before ${secondString}`
+                }
+                if(firstString.localeCompare(secondString) === 0){
+                    document.getElementById("p").innerHTML = `${firstString} and ${secondString} are equal`
+                }
+                if(firstString.localeCompare(secondString) === 1){
+                    document.getElementById("p").innerHTML = `${firstString} is sorted after ${secondString}`
+                }
+            }
+        </script>
+    </body>
+</html>
