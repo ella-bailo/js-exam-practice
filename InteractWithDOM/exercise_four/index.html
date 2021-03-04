@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .normal {
+            color: grey;
+        }
+        .highlighted{
+            color: greenyellow;
+        }
+    </style>
+  <body>
+      <h1 class="normal">I start of normal</h1>
+      <div id="div">I stay normal</div>
+      <p class="normal">Im start off nornal</p>
+
+    <script>
+        let button = document.createElement("BUTTON");
+        button.innerHTML = "click me!"
+        button.setAttribute("onclick", "myFunction()")
+        document.body.appendChild(button);
+
+        function myFunction(){
+            let array = document.getElementsByClassName("normal");
+            for (item in array){
+                document.getElementsByClassName("normal")[item].setAttribute("class", "highlighted");
+            }
+        }
+    </script>
+  </body>
+</html>
