@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form>
+      <label>Please enter your name</label>
+      <input id="name" type="text" /><br />
+      <label>Please enter your date of birth</label>
+      <input id="dob" type="date" /><br />
+      <label>Please select the item that you would like to order</label><br />
+      <label>Bread</label>
+      <input name="product" id="bread" type="radio" value="bread" /><br />
+      <label>Milk</label>
+      <input name="product" id="milk" type="radio" value="milk" /><br />
+      <label>Eggs</label>
+      <input name="product" id="eggs" type="radio" value="eggs" /><br />
+      <label>Flour</label>
+      <input name="product" id="flour" type="radio" value="flour" /><br />
+      <label>Please enter the quantity that you would like to order</label>
+      <input id="quantity" type="number" /><br />
+      <label>Please choose what colour you would like your item to be</label>
+      <input id="color" type="color" /><br />
+    </form>
+    <button onclick="myFunction()">Review order</button>
+    <script>
+      function myFunction() {
+        let name = document.getElementById("name").value;
+        let dob = document.getElementById("dob").value;
+        let bread = document.getElementById("bread").value;
+        let milk = document.getElementById("milk").value;
+        let eggs = document.getElementById("eggs").value;
+        let flour = document.getElementById("flour").value;
+        let quantity = document.getElementById("quantity").value;
+        let color = document.getElementById("color").value;
+
+        let array = [name, dob, bread, milk, eggs, flour, quantity, color];
+
+        for (item in array) {
+          console.log(document.getElementById(array[item]));
+          if (
+            document.getElementById(array[item]) === null ||
+            document.getElementById(array[item]).checked === true
+          ) {
+            let p = document.createElement("P");
+            p.innerHTML = array[item];
+            document.body.appendChild(p);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
